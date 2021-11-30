@@ -44,7 +44,7 @@ def task_view(request):
         date=request.POST.get('date')
         obj=Task(name=name,desc=desc,date=date)
         obj.save()
-    return render(request,"task_view.html",{'obj1':obj1})
+    return render(request,'task_view.html',{'obj1':obj1})
 
 
 def delete(request,taskid):
